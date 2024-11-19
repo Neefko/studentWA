@@ -1,4 +1,5 @@
 #include "main.h"
+#include "sqlite3.h"
 
 using namespace System;
 using namespace System::Windows::Forms;

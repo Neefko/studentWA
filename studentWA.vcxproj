@@ -78,11 +78,14 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\79004\CodeProjects\cppProject\studentWA\sqlite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
     </ClCompile>
     <Link>
-      <AdditionalDependencies />
+      <AdditionalDependencies>sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <EntryPointSymbol>main</EntryPointSymbol>
       <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>C:\Users\79004\CodeProjects\cppProject\studentWA\sqlite;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -120,14 +123,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="add_student.cpp" />
+    <ClCompile Include="allstude.cpp" />
+    <ClCompile Include="delstude.cpp" />
+    <ClCompile Include="grafic.cpp" />
+    <ClCompile Include="infostude.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="sqlite_helper.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="add_student.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="allstude.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="delstude.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="grafic.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="infostude.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="main.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="sqlite\sqlite3.h" />
+    <ClInclude Include="sqlite_helper.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="add_student.resx">
+      <DependentUpon>add_student.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allstude.resx">
+      <DependentUpon>allstude.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delstude.resx">
+      <DependentUpon>delstude.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grafic.resx">
+      <DependentUpon>grafic.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infostude.resx">
+      <DependentUpon>infostude.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.h</DependentUpon>
     </EmbeddedResource>
