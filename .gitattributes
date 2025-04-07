@@ -43,7 +43,7 @@
 #*.jpg   binary
 #*.png   binary
 #*.gif   binary
-
+sqlite3/* linguist-vendored
 ###############################################################################
 # diff behavior for common document formats
 # 
